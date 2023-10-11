@@ -1,0 +1,22 @@
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT=0;
+START TRANSACTION;
+SET time_zone="+00:00";
+
+DROP TABLE IF EXISTS `customer`;
+CREATE TABLE IF NOT EXISTS `customer` (
+  `Account No,` INT NOT NULL AUTO_INCREMENT,
+  `Name` VARCHAR(45) NULL DEFAULT NULL,
+  `Address` VARCHAR(100) NULL DEFAULT NULL,
+  `Phone No.` VARCHAR(15) NULL DEFAULT NULL,
+  `Email ID` VARCHAR(80) NULL DEFAULT NULL,
+  `Aadhar No.` VARCHAR(20) NULL DEFAULT NULL,
+  `Account_type` VARCHAR(20) NULL DEFAULT NULL,
+  `Status` CHAR(15) NULL DEFAULT NULL,
+  `Balance` FLOAT(15,2) NULL DEFAULT NULL,
+  PRIMARY KEY (`Account No,`));
+ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+INSERT INTO `bankdb`.`customer` (`Account No,`, `Name`, `Address`, `Phone No.`, `Email ID`, `Aadhar No.`, `Account_type`, `Status`, `Balance`) VALUES ('1', 'Prathmesh', 'Amravati, MAharashtra', '9689182477', 'prathmeshmahakal@gmail.com', '121212121121212', 'Saving', 'Active', '150000.00');
+INSERT INTO `bankdb`.`customer` (`Account No,`, `Name`, `Address`, `Phone No.`, `Email ID`, `Aadhar No.`, `Account_type`, `Status`, `Balance`) VALUES ('2', 'Rashmi', 'Mumbai,Maharashtra', '9898989895', 'rashmi@gamil.com', '152369748565236', 'Current', 'Active', '120000.00');
+INSERT INTO `bankdb`.`customer` (`Account No,`, `Name`, `Address`, `Phone No.`, `Email ID`, `Aadhar No.`, `Account_type`, `Status`, `Balance`) VALUES ('3', 'Abhishek', 'Chennai, TamilNadu', '9898932556', 'abhishek@gmail.com', '147852369874125', 'Current', 'Active', '20000.00');
